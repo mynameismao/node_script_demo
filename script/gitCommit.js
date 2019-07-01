@@ -20,7 +20,7 @@ const PROJECT_NAME = path.parse(path.resolve(__dirname, '..')).name
 const SCRIPT_COMMIT_PROJECT = `cd .. && git add . && git commit -m "Fix ${PROJECT_NAME} project's bugs @ ${new Date()}."`
 const SCRIPT_PULL_MERGE = `cd .. && git pull`
 const SCRIPT_COMMIT_MERGE = `cd .. && git add . && git commit -m "Merge all projects."`
-const SCRIPT_PUSH_ALL_CHANGE = `cd .. && git push`
+const SCRIPT_PUSH_ALL_CHANGE = `cd .. && git push -u origin master`
 
 shell.exec(SCRIPT_COMMIT_PROJECT, defaultCallback(() => {
   shell.exec(SCRIPT_PULL_MERGE, defaultCallback(() => {
