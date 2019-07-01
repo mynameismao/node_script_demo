@@ -1,0 +1,10 @@
+.idea/
+node_modules/
+secret/
+dist/
+public/
+src/entry/
+package-lock.json
+PagesInfo.json
+*.iml
+yarn.lock
